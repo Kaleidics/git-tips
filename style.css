@@ -69,6 +69,7 @@ main {
 
 .topic-content-relative {
     position: relative;
+    cursor: pointer;
 }
 
 .topic-content--title {
