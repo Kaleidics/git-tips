@@ -23,9 +23,14 @@ body {
 
 }
 
+main {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
 .header {
   padding: 1.5rem;
-  background: #000022;
+  background: linear-gradient(to right bottom,#17173c,#000022, #0a0a0a);
   display: flex;
   align-items: center;
 }
@@ -50,5 +55,23 @@ body {
 
 .heading-secondary {
   color: #FBF5F3;
+  font-size: 1.8rem;
+}
+
+.section {
+
+}
+
+.topic-content {
+  padding: 1rem .5rem;
+}
+
+.topic-content--title {
+  padding: .5rem;
   font-size: 1.6rem;
+}
+
+.hidden {
+  width: 0%;
+  display: none;
 }
