@@ -53,6 +53,47 @@
                     </div>
                 </div>
             </section>
+            <!-- Tip 1 -->
+
+            <!-- Tip  -->
+            <section id="tip_2" class="section">
+                <div class="topic-content">
+                    <div class="topic-content-relative">
+                        <h3 class="topic-content--title">Delete all commit history in Github</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="tip_2_content" class="topic-content--container hidden">
+                        <p class="topic-content--text">
+                            Purpose: Deletes all commit history but keep the code in its current state.
+                        </p>
+                        <p class="topic-content--text">
+                            How to: Deleting the .git folder may cause problems in your git repository. 
+                            If you want to delete all your commit history but keep the code in its current state, it is very safe to do it as in the following:
+                        </p>
+
+                        <div class="topic-content--code-block">
+                            <pre>
+                                <code>
+                                    <span class="comment">//1. Checkout</span>
+                                    <span>git checkout --orphan new_branch</span>
+                                    <span class="comment">//2. Add all the files</span>
+                                    <span>git add .</span>
+                                    <span class="comment">//3. Commit the changes</span>
+                                    <span>git commit -m "commit message"</span>
+                                    <span class="comment">//4. Delete the branch</span>
+                                    <span>git branch -d master</span>
+                                    <span class="comment">//5. Rename the current branch to master</span>
+                                    <span>git branch -m master</span>
+                                    <span class="comment">//6. Force update your repository</span>
+                                    <span>git push -f origin master</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tip  -->
+
         </main>
 
         <script src="script.js"></script>
