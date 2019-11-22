@@ -2,6 +2,7 @@ let refresh = window.localStorage.getItem('refresh');
 if (refresh === null) {
     window.location.reload();
     window.localStorage.setItem('refresh', '1');
+} else {
     setTimeout(() => {
         window.localStorage.removeItem('refresh');
         window.location.reload();
