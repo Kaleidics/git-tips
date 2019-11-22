@@ -28,25 +28,28 @@
         </header>
         <main>
             <!-- Tip 1 -->
-            <section id="tip_1" class="section">
+            <section class="section">
                 <div class="topic-content">
-                    <div class="topic-content-relative">
-                        <h3 class="topic-content--title">How to initialize a git repository</h3>
+                    <div id="tip_1" class="topic-content-relative">
+                        <h3 class="topic-content--title">Media Query: Mobile to Desktop</h3>
                         <div class="arrow"></div>
                     </div>
                     <div id="tip_1_content" class="topic-content--container hidden">
+                        <hr>
                         <p class="topic-content--text">
-                            Purpose: To initialise a git repository for a new or existing project.
+                            Purpose: A media query for smaller screen size to larger.
                         </p>
                         <p class="topic-content--text">
-                            How to: Run <code class="code">git init</code> in the root of your project directory.
+                            How to: Write CSS within the brackets of the media query. When maximized to
+                            the breakpoint, apply the styles.
                         </p>
 
                         <div class="topic-content--code-block">
                             <pre>
                                 <code>
-                                    <span>~/Documents/myProjects/myfolder</span>
-                                    <span>$: git init</span>
+                                    <span>@media screen and (min-width: 1024px) {</span>
+                                        <span class="m-left">//styles here</span>
+                                    <span>}</span>
                                 </code>
                             </pre>
                         </div>
@@ -55,14 +58,46 @@
             </section>
             <!-- Tip 1 -->
 
-            <!-- Tip  -->
-            <section id="tip_2" class="section">
+            <!-- Tip 2 -->
+            <section class="section">
                 <div class="topic-content">
-                    <div class="topic-content-relative">
-                        <h3 class="topic-content--title">Delete all commit history in Github</h3>
+                    <div id="tip_2" class="topic-content-relative">
+                        <h3 class="topic-content--title">Media Query: Desktop to Mobile</h3>
                         <div class="arrow"></div>
                     </div>
                     <div id="tip_2_content" class="topic-content--container hidden">
+                        <hr>
+                        <p class="topic-content--text">
+                            Purpose: A media query for large screen size to smaller.
+                        </p>
+                        <p class="topic-content--text">
+                            How to: Write CSS within the brackets of the media query. When minimized
+                            to the breakpoint, apply the styles.
+                        </p>
+
+                        <div class="topic-content--code-block">
+                            <pre>
+                                <code>
+                                    <span>@media(max-width:720px) {</span>
+                                        <span class="m-left">//styles here</span>
+                                    <span>}</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tip 2 -->
+
+            <!-- Tip 3 -->
+            <section class="section">
+                <div class="topic-content">
+                    <div id="tip_3" class="topic-content-relative">
+                        <h3 class="topic-content--title">Delete all commit history in Github</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="tip_3_content" class="topic-content--container hidden">
+                        <hr>
                         <p class="topic-content--text">
                             Purpose: Deletes all commit history but keep the code in its current state.
                         </p>
@@ -92,7 +127,35 @@
                     </div>
                 </div>
             </section>
-            <!-- Tip  -->
+            <!-- Tip 3 -->
+
+            <!-- Tip 4 -->
+            <section class="section">
+                <div class="topic-content">
+                    <div id="tip_4" class="topic-content-relative">
+                        <h3 class="topic-content--title">CSS: Box Shadow</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="tip_4_content" class="topic-content--container hidden">
+                        <hr>
+                        <p class="topic-content--text">
+                            Purpose: Quick styling for a box shadow
+                        </p>
+                        <p class="topic-content--text">
+                            How to: Apply the styles
+                        </p>
+
+                        <div class="topic-content--code-block">
+                            <pre>
+                                <code>
+                                    <span>box-shadow: 3px 5px 8px -1px rgba(71,71,71,.1);</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tip 4 -->
 
         </main>
 

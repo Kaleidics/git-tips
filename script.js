@@ -1,13 +1,13 @@
-// Tip1
-const tip_1 = document.querySelector("#tip_1");
-const tip_1_content = document.querySelector("#tip_1_content");
-tip_1.addEventListener("click", function() {
-  tip_1_content.classList.toggle("hidden");
-});
+triggerOn("#tip_1", "#tip_1_content");
+triggerOn("#tip_2", "#tip_2_content");
+triggerOn("#tip_3", "#tip_3_content");
+triggerOn("#tip_4", "#tip_4_content");
 
-const tip_2 = document.querySelector("#tip_2");
-const tip_2_content = document.querySelector("#tip_2_content");
-tip_2.addEventListener("click", function() {
-  tip_2_content.classList.toggle("hidden");
-});
+function triggerOn(option, target) {
+  const tip = document.querySelector(option);
+  const tipContent = document.querySelector(target);
 
+  tip.addEventListener("click", function() {
+    tipContent.classList.toggle("hidden");
+  });
+}

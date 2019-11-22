@@ -30,7 +30,7 @@ main {
 
 .header {
     padding: 1.5rem;
-    background: linear-gradient(to right bottom, #17173c, #000022, #0a0a0a);
+    background: linear-gradient(to right bottom, rgba(32, 39, 70, .9), rgba(32, 39, 70, 1));
     display: flex;
     align-items: center;
 }
@@ -84,12 +84,14 @@ main {
 .topic-content--text {
     font-size: 1.4rem;
     margin: 0.5rem 0;
+    color:rgb(18, 25, 32);
+    text-shadow: 1px 1px #F0F0F0;
 }
 
 .topic-content--code-block {
     width: 100%;
     padding: 0 1rem;
-    background: #000022;
+    background: rgb(32, 39, 70);;
     border-radius: 3px;
     color: #e28413;
     font-size: 1.4rem;
@@ -103,15 +105,29 @@ main {
     padding: 0.2rem 0.5rem;
 }
 
+hr {
+    margin: 0 auto;
+    height: 2px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(31, 31, 101, 0.2);
+}
 
 code span {
-    margin: 1rem 0;
     position: absolute;
     left: .5rem;
 }
 
+.m-left {
+    margin-left: 2rem;
+}
+
 code span.comment {
   color: #fbf5f3;
+}
+
+code span.yellow {
+    color: #cda869;
 }
 
 pre code {
@@ -121,6 +137,12 @@ pre code {
     display: block;
     overflow-x: scroll;
     position: relative;
+}
+
+@media screen and (min-width: 800px) {
+    pre code {
+        overflow: hidden;
+    }
 }
 
 .hidden {
@@ -162,12 +184,17 @@ pre code {
     animation-iteration-count: infinite;
     animation-name: arrow;
 }
+
 @keyframes arrow {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: translate(-10px, -10px);
     }
 }
+
+
+
