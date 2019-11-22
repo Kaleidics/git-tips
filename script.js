@@ -2,11 +2,13 @@ let refresh = window.localStorage.getItem('refresh');
 if (refresh === null) {
     window.location.reload();
     window.localStorage.setItem('refresh', '1');
+    setTimeout(() => {
+        window.localStorage.removeItem('refresh');
+        window.location.reload();
+    }, 3000);
 }
 
-window.addEventListener('unload', function() {
-    localStorage.removeItem('refresh');
-});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     triggerOn('#tip_1', '#tip_1_content');
