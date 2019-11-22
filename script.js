@@ -6,7 +6,7 @@ if (refresh === null) {
     setTimeout(() => {
         window.localStorage.removeItem('refresh');
         window.location.reload();
-    }, 3000);
+    }, 3600000);
 }
 
 
