@@ -103,6 +103,7 @@ main {
     border-radius: 3px;
     color: #e28413;
     padding: 0.2rem 0.5rem;
+    text-shadow: none;
 }
 
 hr {
@@ -113,7 +114,7 @@ hr {
     background: rgba(31, 31, 101, 0.2);
 }
 
-code span {
+code span.container {
     position: absolute;
     left: .5rem;
 }
@@ -128,6 +129,32 @@ code span.comment {
 
 code span.yellow {
     color: #cda869;
+}
+code span.blue {
+    color: #3d8fd1;
+}
+
+code span.sun {
+    color: #FFDC00;
+}
+
+code span.red {
+   color: rgba(235,78,122,.8);
+}
+
+code span.grey {
+   color: rgb(102, 102, 102);
+}
+
+code span.purple {
+    color: rebeccapurple;
+}
+code span.lime {
+    color: #01FF70;
+}
+
+code span.pink {
+    color: #F012BE;
 }
 
 pre code {

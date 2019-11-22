@@ -31,7 +31,7 @@
             <section class="section">
                 <div class="topic-content">
                     <div id="tip_1" class="topic-content-relative">
-                        <h3 class="topic-content--title">Media Query: Mobile to Desktop</h3>
+                        <h3 class="topic-content--title">CSS: Media-Query Mobile to Desktop</h3>
                         <div class="arrow"></div>
                     </div>
                     <div id="tip_1_content" class="topic-content--container hidden">
@@ -47,9 +47,9 @@
                         <div class="topic-content--code-block">
                             <pre>
                                 <code>
-                                    <span>@media screen and (min-width: 1024px) {</span>
-                                        <span class="m-left">//styles here</span>
-                                    <span>}</span>
+                                    <span class="container">@media screen and (min-width: 1024px) {</span>
+                                        <span class="container m-left">//styles here</span>
+                                    <span class="container">}</span>
                                 </code>
                             </pre>
                         </div>
@@ -62,7 +62,7 @@
             <section class="section">
                 <div class="topic-content">
                     <div id="tip_2" class="topic-content-relative">
-                        <h3 class="topic-content--title">Media Query: Desktop to Mobile</h3>
+                        <h3 class="topic-content--title">CSS: Media-Query Desktop to Mobile</h3>
                         <div class="arrow"></div>
                     </div>
                     <div id="tip_2_content" class="topic-content--container hidden">
@@ -78,9 +78,9 @@
                         <div class="topic-content--code-block">
                             <pre>
                                 <code>
-                                    <span>@media(max-width:720px) {</span>
-                                        <span class="m-left">//styles here</span>
-                                    <span>}</span>
+                                    <span class="container ">@media(max-width:720px) {</span>
+                                        <span class="container m-left">//styles here</span>
+                                    <span class="container">}</span>
                                 </code>
                             </pre>
                         </div>
@@ -93,7 +93,7 @@
             <section class="section">
                 <div class="topic-content">
                     <div id="tip_3" class="topic-content-relative">
-                        <h3 class="topic-content--title">Delete all commit history in Github</h3>
+                        <h3 class="topic-content--title">Git: Delete all commit history in Github</h3>
                         <div class="arrow"></div>
                     </div>
                     <div id="tip_3_content" class="topic-content--container hidden">
@@ -109,18 +109,18 @@
                         <div class="topic-content--code-block">
                             <pre>
                                 <code>
-                                    <span class="comment">//1. Checkout</span>
-                                    <span>git checkout --orphan new_branch</span>
-                                    <span class="comment">//2. Add all the files</span>
-                                    <span>git add .</span>
-                                    <span class="comment">//3. Commit the changes</span>
-                                    <span>git commit -m "commit message"</span>
-                                    <span class="comment">//4. Delete the branch</span>
-                                    <span>git branch -d master</span>
-                                    <span class="comment">//5. Rename the current branch to master</span>
-                                    <span>git branch -m master</span>
-                                    <span class="comment">//6. Force update your repository</span>
-                                    <span>git push -f origin master</span>
+                                    <span class="container comment">//1. Checkout</span>
+                                    <span class="container">git checkout --orphan new_branch</span>
+                                    <span class="container comment">//2. Add all the files</span>
+                                    <span class="container">git add .</span>
+                                    <span class="container comment">//3. Commit the changes</span>
+                                    <span class="container">git commit -m "commit message"</span>
+                                    <span class="container comment">//4. Delete the branch</span>
+                                    <span class="container">git branch -d master</span>
+                                    <span class="container comment">//5. Rename the current branch to master</span>
+                                    <span class="container">git branch -m master</span>
+                                    <span class="container comment">//6. Force update your repository</span>
+                                    <span class="container">git push -f origin master</span>
                                 </code>
                             </pre>
                         </div>
@@ -148,7 +148,7 @@
                         <div class="topic-content--code-block">
                             <pre>
                                 <code>
-                                    <span>box-shadow: 3px 5px 8px -1px rgba(71,71,71,.1);</span>
+                                    <span class="container">box-shadow: 3px 5px 8px -1px rgba(71,71,71,.1);</span>
                                 </code>
                             </pre>
                         </div>
@@ -156,6 +156,65 @@
                 </div>
             </section>
             <!-- Tip 4 -->
+
+            <!-- Tip 5 -->
+            <section class="section">
+                <div class="topic-content">
+                    <div id="tip_5" class="topic-content-relative">
+                        <h3 class="topic-content--title">Git: Create branch and switch to it</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="tip_5_content" class="topic-content--container hidden">
+                        <hr>
+                        <p class="topic-content--text">
+                            Purpose: Creates a new branch and switches to it at the same time.
+                        </p>
+                        <p class="topic-content--text">
+                            How to: Run <code class="code">git checkout</code> command with the <code class="code">-b switch</code>
+                        </p>
+
+                        <div class="topic-content--code-block">
+                            <pre>
+                                <code>
+                                    <span class="container">$ git checkout -b my_new_branch</span>
+                                    <span class="container">Switched to a new branch "my_new_branch"</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tip 5 -->
+
+            <!-- Tip 6 -->
+            <section class="section">
+                <div class="topic-content">
+                    <div id="tip_6" class="topic-content-relative">
+                        <h3 class="topic-content--title">JS: Double Condition Ternary</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="tip_6_content" class="topic-content--container hidden">
+                        <hr>
+                        <p class="topic-content--text">
+                            Purpose: Shorthand single line conditional statement.
+                        </p>
+                        <p class="topic-content--text">
+                            How to: Returns a value based on the following code:
+                        </p>
+
+                        <div class="topic-content--code-block">
+                            <pre>
+                                <code>
+                                    <span class="container"><span class="sun">const</span> <span class="red">x</span> = <span class="blue">variable1</span> === <span class="pink">condition1</span> ? <span class="pink">return1</span> : <span class="blue">variable1</span> === <span class="lime">condition2</span> ? <span class="lime">return2</span> : return3;</span>
+                                    <span class="container comment">//React based example</span>
+                                    <span class="container"><span class="sun">const</span> <span class="red">y</span> = <span class="blue">this.props.fruit</span> === <span class="pink">"apples"</span> ? <span class="pink">'red'</span> : <span class="blue">this.props.fruit</span> === <span class="lime">'limes'</span> ? <span class="lime">'green'</span> : 'brown';</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tip 6 -->
 
         </main>
 
