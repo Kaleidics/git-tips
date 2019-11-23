@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     triggerOn('#tip_4', '#tip_4_content');
     triggerOn('#tip_5', '#tip_5_content');
     triggerOn('#tip_6', '#tip_6_content');
+    triggerOn('#tip_7', '#tip_7_content');
 });
 
 function triggerOn(option, target) {
